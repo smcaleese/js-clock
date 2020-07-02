@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+	<title>Clock</title>
+	<link href="index.css" type="text/css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="navbar">
+    <h1 id="navbar-title">JS Clock</h1>
+</div>
+
+<div id="full-screen-container">
+    <!-- Minute Clock -->
+    <div class="grid-box">
+        <div class="clock-box">
+            <div class="clock-title">
+                <h1>0</h1>
+                <h1>This Minute</h1>
+                <h1>60</h1>
+            </div>
+            <div class="clock">
+                <div class="vertical-dividing-lines"></div>
+                <div class="slider" id="minute-clock-slider"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Hour Clock -->
+    <div class="grid-box">
+        <div class="clock-box">
+            <div class="clock-title">
+                <h1>0</h1>
+                <h1>This Hour</h1>
+                <h1>60</h1>
+            </div>
+            <div class="clock">
+                <div class="vertical-dividing-lines"></div>
+                <div class="slider" id="hour-clock-slider"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day Clock -->
+    <div class="grid-box">
+        <div class="clock-box">
+            <div class="clock-title">
+                <h1>0</h1>
+                <h1>Today</h1>
+                <h1>24</h1>
+            </div>
+            <div class="clock">
+                <div class="vertical-dividing-lines"></div>
+                <div class="slider" id="day-clock-slider"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Week Clock -->
+    <div class="grid-box">
+        <div class="clock-box">
+            <div class="clock-title">
+                <h1>1</h1>
+                <h1>This Week</h1>
+                <h1>7</h1>
+            </div>
+            <div class="clock">
+                <div class="vertical-dividing-lines"></div>
+                <div class="slider" id="week-clock-slider"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Month Clock -->
+    <div class="grid-box">
+        <div class="clock-box">
+            <div class="clock-title">
+                <h1>1</h1>
+                <h1 id="this-month">This Month</h1>
+                <h1 id="end-of-month-date"></h1>
+            </div>
+            <div class="clock">
+                <div class="vertical-dividing-lines"></div>
+                <div class="slider" id="month-clock-slider"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Year Clock -->
+    <div class="grid-box">
+        <div class="clock-box">
+            <div class="clock-title">
+                <h1>1</h1>
+                <h1 id="this-year"></h1>
+                <h1>12</h1>
+            </div>
+            <div class="clock">
+                <div class="vertical-dividing-lines"></div>
+                <div class="slider" id="year-clock-slider"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="sliders.js"></script>
+<script src="add-dividing-lines.js"></script>
+
+</body>
+</html>
